@@ -55,7 +55,7 @@ export async function GET() {
     console.log("Data loaded successfully. Sample data:", data.slice(0, 5));
 
     // K-meansクラスタリングの実行
-    const k = 3;
+    const k = 3;    // k=3でクラスタリング
     const km = new kmeans({ k });
     const clusteringResult = km.cluster(data);
 

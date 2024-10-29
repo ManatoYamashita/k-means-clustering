@@ -45,7 +45,7 @@ export default function HomePage() {
         <h1 className="text-3xl font-bold mb-6">人工知能とデータマイニング 任意課題3</h1>
         <h2 className="font-semibold mb-4">g2172117: 山下マナト</h2>
 
-        <p className="mb-4">K-means法でdata1.csvまたはdata2.csv、data3.csvをランダムでクラスタリングするプログラム。クラスタリング結果は以下</p>
+        <p className="mb-4">K-means法でdata1.csvまたはdata2.csv、data3.csvをランダムでクラスタリングするプログラム。(k=3)クラスタリング結果は以下</p>
 
         <hr className="mb-4" />
 
@@ -100,13 +100,14 @@ export default function HomePage() {
       <hr className="mb-4 mt-6" />
 
       <ol className="list-decimal list-inside mt-6 mb-6 ml-4">
-          <li><Link className="text-blue-600 hover:underline" href="https://nextjs.org">Next.js Approuter</Link> with <Link className="text-blue-600 hover:underline" href="https://www.typescriptlang.org/">Typescript</Link>で作成</li>
-          <li><Link className="text-blue-600 hover:underline" href="https://ui.shadcn.com">shadcn-ui</Link></li>
-          <li><Link className="text-blue-600 hover:underline" href="https://www.npmjs.com/package/kmeans-js">kmeans-jsライブラリ</Link></li>
+          <li><Link className="text-blue-600 hover:underline" href="https://nextjs.org">Next.js Approuter</Link> with <Link className="text-blue-600 hover:underline" href="https://www.typescriptlang.org/">Typescript</Link>: javascriptアプリケーション</li>
+          <li><Link className="text-blue-600 hover:underline" href="https://ui.shadcn.com">shadcn-ui</Link>: UIコンポーネント</li>
+          <li><Link className="text-blue-600 hover:underline" href="https://www.npmjs.com/package/kmeans-js">kmeans-jsライブラリ</Link>: kmeans法によるクラスタリング</li>
+          <li><Link className="text-blue-600 hover:underline" href="https://www.papaparse.com/">papaparseライブラリ</Link>: CSVのパース</li>
       </ol>
 
       <footer className="mt-8 py-4 text-center text-sm text-gray-600">
-        ©︎2024 <Link href="https://manapuraza.com" className="text-blue-600 hover:underline">manapuraza.com</Link> / <Link href="https://github.com/manatoYamshita" className="text-blue-600 hover:underline">Githubリポジトリ</Link>
+        ©︎2024 <Link href="https://manapuraza.com" className="text-blue-600 hover:underline">山下マナト</Link> / <Link href="https://github.com/ManatoYamashita/k-means-clustering" className="text-blue-600 hover:underline">Githubリポジトリ</Link>
       </footer>
     </div>
   )
