@@ -1,4 +1,8 @@
-# 人工知能とデータマイニング 任意課題3 K-meansクラスタリング
+# K-means法 クラスタリング
+
+> 人工知能とデータマイニング 任意課題3
+
+![k-means](https://github.com/user-attachments/assets/853ded59-093a-4763-8087-d51ea91af7ca)
 
 このプロジェクトは、CSVファイルから読み込んだ東京都市大学横浜キャンパスの2号館の太陽光発電システムのデータに対してバッグエンドでK-meansクラスタリング(k=3)を実行し、その結果をJSON形式で返しクライアントで表示するNext.jsアプリケーションです。
 
@@ -38,8 +42,8 @@
 1. **リポジトリのクローン**:
 
    ``` bash
-   git clone https://github.com/manapuraza.com/k-means-clustering.git
-   cd solar-power-clustering
+   git clone https://github.com/ManatoYamashita/k-means-clustering.git
+   cd k-means-clustering
    ```
 
 2. **依存関係のインストール**:
