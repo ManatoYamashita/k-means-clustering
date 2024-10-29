@@ -43,7 +43,7 @@ export default function HomePage() {
     <div className="container mx-auto p-4 min-h-screen flex flex-col">
       <main className="flex-grow">
         <h1 className="text-3xl font-bold mb-6">人工知能とデータマイニング 任意課題3</h1>
-        <h2 className="font-semibold mb-4">g2172117: 山下マナト</h2>
+        <h2 className="font-semibold mb-4"><Link href="https://manapuraza.com">g2172117: 山下マナト</Link></h2>
 
         <p className="mb-4">K-means法でdata1.csvまたはdata2.csv、data3.csvをランダムでクラスタリングするプログラム。(k=3)クラスタリング結果は以下</p>
 
