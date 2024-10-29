@@ -1,6 +1,8 @@
-# K-means法 クラスタリング
+# [K-means法 クラスタリング](https://kmeans-clustering.vercel.app)
 
 > 人工知能とデータマイニング 任意課題3
+
+[プロジェクトはこちら](https://kmeans-clustering.vercel.app)
 
 ![k-means](https://github.com/user-attachments/assets/853ded59-093a-4763-8087-d51ea91af7ca)
 
