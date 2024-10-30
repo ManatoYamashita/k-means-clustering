@@ -2,9 +2,12 @@
 
 > 人工知能とデータマイニング 任意課題3
 
-[プロジェクトはこちら](https://kmeans-clustering.vercel.app)
+[プロジェクトはこちら(WebApp)](https://kmeans-clustering.vercel.app)
 
-![k-means](https://github.com/user-attachments/assets/853ded59-093a-4763-8087-d51ea91af7ca)
+[aレポートはこちら(pdf)](https://github.com/user-attachments/files/17566025/aiAndDataming_task3.pdf)
+
+![ogp](https://github.com/user-attachments/assets/8ff9fc00-43bd-4cf3-a900-68e01c12fcfd)
+
 
 このプロジェクトは、CSVファイルから読み込んだ東京都市大学横浜キャンパスの2号館の太陽光発電システムのデータに対してバッグエンドでK-meansクラスタリング(k=3)を実行し、その結果をJSON形式で返しクライアントで表示するNext.jsアプリケーションです。
 
@@ -69,6 +72,9 @@
    ブラウザまたはAPIクライアントで`http://localhost:3000/api/clustering`にアクセスします。APIはランダムに選ばれたCSVファイルからデータを読み込み、クラスタリング結果をJSON形式で返します。
 
 3. **クライアントページの表示**:
+
+   ![k-means](https://github.com/user-attachments/assets/853ded59-093a-4763-8087-d51ea91af7ca)
+
    クライアントサイドでクラスタリング結果を確認するには、ブラウザで`http://localhost:3000`を開いてください。
 
 ## データの処理フロー
