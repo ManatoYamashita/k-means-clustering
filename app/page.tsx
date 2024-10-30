@@ -1,53 +1,80 @@
-'use client'
+"use client"
 
 import { useEffect, useState } from "react"
 import Link from "next/link"
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { Button } from "@/components/ui/button"
 import { Skeleton } from "@/components/ui/skeleton"
 import { Loader2 } from "lucide-react"
+import Image from "next/image"
 
 type ClusterData = {
-  clusters: number[][]
+  clusters: number[][],
+  file: string
 }
 
 export default function HomePage() {
   const [clusters, setClusters] = useState<number[][] | null>(null)
+  const [selectedFile, setSelectedFile] = useState<string | null>(null)
   const [error, setError] = useState<string | null>(null)
   const [isLoading, setIsLoading] = useState(true)
 
-  useEffect(() => {
-    const fetchClusters = async () => {
-      setIsLoading(true)
-      try {
-        const response = await fetch("/api/clustering")
-        
-        if (!response.ok) {
-          throw new Error(`API request failed with status ${response.status}`)
-        }
-
-        const data: ClusterData = await response.json()
-        console.log("API response data:", data) // Debug log
-        setClusters(data.clusters ?? null)
-      } catch (error) {
-        console.error("Error fetching clusters:", error)
-        setError("クラスタリングデータの取得に失敗しました。後でもう一度お試しください。")
-      } finally {
-        setIsLoading(false)
+  // クラスタリングデータを取得する関数
+  const fetchClusters = async () => {
+    setIsLoading(true)
+    try {
+      const response = await fetch("/api/clustering")
+      
+      if (!response.ok) {
+        throw new Error(`API request failed with status ${response.status}`)
       }
+
+      const data: ClusterData = await response.json()
+      console.log("API response data:", data) // Debug log
+      setSelectedFile(data.file)
+      setClusters(data.clusters ?? null)
+    } catch (error) {
+      console.error("Error fetching clusters:", error)
+      setError("クラスタリングデータの取得に失敗しました。後でもう一度お試しください。")
+    } finally {
+      setIsLoading(false)
     }
+  }
+
+  // 初回ロード時および再読み込みボタン押下時にデータを取得
+  useEffect(() => {
     fetchClusters()
   }, [])
 
   return (
     <div className="container mx-auto p-4 min-h-screen flex flex-col">
-      <main className="flex-grow">
+      <main className="flex-grow m-auto mt-6">
         <h1 className="text-3xl font-bold mb-6">人工知能とデータマイニング 任意課題3</h1>
         <h2 className="font-semibold mb-4"><Link href="https://manapuraza.com">g2172117: 山下マナト</Link></h2>
 
         <p className="mb-4">K-means法でdata1.csvまたはdata2.csv、data3.csvをランダムでクラスタリングするプログラム。(k=3)クラスタリング結果は以下</p>
 
+        <Button
+          onClick={fetchClusters}
+          className="mb-4 px-4 py-2 hover:bg-white hover:text-primary border border-primary"
+        >
+          クラスタリングを再実行
+        </Button>
+
         <hr className="mb-4" />
+        {selectedFile && (
+          <p className="mb-4 inline-flex items-center">
+            <Image
+              src="/file.svg"
+              alt="Kmeans clustered file"
+              width={16}
+              height={16}
+              className="mr-1"
+            />
+            <span className="font-semibold">{selectedFile}</span>
+          </p>
+        )}
 
         {error ? (
           <Alert variant="destructive">
