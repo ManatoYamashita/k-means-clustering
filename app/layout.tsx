@@ -14,6 +14,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://kmeans-clustering.vercel.app/'),
   title: "K-means Clustering WebApp - 東京都市大学 人工知能とデータマイニング",
   description: "東京都市大学 情報システム学科の『人工知能とデータマイニング』任意課題3で作成したプログラムです。K-means法(k=3)を使用して横浜キャンパス2号館の大陽光パネルの発電量に関するCSVデータをクラスタリングし、クラスタごとのデータの傾向を解析します。使用データは生データおよび正規化データで、太陽光発電量、日射量、気温、消費電力量を含みます。",
   keywords: ["K-means", "クラスタリング", "人工知能", "データマイニング", "東京都市大学", "情報システム学科", "CSV", "正規化データ", "太陽光発電", "課題3"],
@@ -25,7 +26,7 @@ export const metadata: Metadata = {
     siteName: "東京都市大学 山下マナト - K-means Clustering",
     images: [
       {
-        url: "/public/ogp.jpg",
+        url: "/ogp.jpg",
         width: 1200,
         height: 630,
         alt: "人工知能とデータマイニング: K-meansクラスタリング",
@@ -36,8 +37,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    site: "@manatoyamashita",
-    creator: "@manatoyamashita",
+    site: "@manapuraza",
+    creator: "@manapuraza",
     title: "K-means Clustering WebApp - 東京都市大学 人工知能とデータマイニング",
     description: "東京都市大学 情報システム学科の『人工知能とデータマイニング』任意課題3で作成したプログラムです。K-means法(k=3)を使用して横浜キャンパス2号館の大陽光パネルの発電量に関するCSVデータをクラスタリングし、クラスタごとのデータの傾向を解析します。使用データは生データおよび正規化データで、太陽光発電量、日射量、気温、消費電力量を含みます。",
     images: ["./ogp.jpg"],
