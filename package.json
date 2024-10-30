@@ -14,6 +14,7 @@
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "exceljs": "^4.4.0",
+    "gsap": "^3.12.5",
     "kmeans-js": "^0.1.2",
     "lucide-react": "^0.454.0",
     "next": "15.0.1",
