@@ -4,7 +4,7 @@
 
 [プロジェクトはこちら(WebApp)](https://kmeans-clustering.vercel.app)
 
-[レポートはこちら(pdf)](https://github.com/user-attachments/files/17566025/aiAndDataming_task3.pdf)
+[レポートはこちら(pdf)](https://github.com/user-attachments/files/17566080/aiAndDataming_task3.pdf)
 
 ![ogp](https://github.com/user-attachments/assets/8ff9fc00-43bd-4cf3-a900-68e01c12fcfd)
 
