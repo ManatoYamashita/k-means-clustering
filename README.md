@@ -47,7 +47,7 @@
 1. **リポジトリのクローン**:
 
    ``` bash
-   git clone https://github.com/ManatoYamashita/k-means-clustering.git
+   git clone https://github.com/ManatoYamashita/kmeans-clustering.git
    cd k-means-clustering
    ```
 
@@ -102,4 +102,4 @@
 
 ## ライセンス
 
-MIT
+MIT license

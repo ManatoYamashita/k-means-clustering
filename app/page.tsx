@@ -134,7 +134,7 @@ export default function HomePage() {
       </ol>
 
       <footer className="mt-8 py-4 text-center text-sm text-gray-600">
-        ©︎2024 <Link href="https://manapuraza.com" className="text-blue-600 hover:underline">山下マナト</Link> / <Link href="https://github.com/ManatoYamashita/k-means-clustering" className="text-blue-600 hover:underline">Githubリポジトリ</Link>
+        <p>©︎2024 <Link href="https://manapuraza.com" className="text-blue-600 hover:underline">山下マナト</Link> / <Link href="https://github.com/ManatoYamashita/kmeans-clustering" className="text-blue-600 hover:underline">Githubリポジトリ</Link> / <Link href="https://github.com/user-attachments/assets/8ff9fc00-43bd-4cf3-a900-68e01c12fcfd">レポート</Link></p>
       </footer>
     </div>
   )
