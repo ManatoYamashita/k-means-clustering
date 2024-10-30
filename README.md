@@ -6,7 +6,7 @@
 
 [レポートはこちら(pdf)](https://github.com/user-attachments/files/17566080/aiAndDataming_task3.pdf)
 
-![ogp](https://github.com/user-attachments/assets/8ff9fc00-43bd-4cf3-a900-68e01c12fcfd)
+![ogp](https://github.com/user-attachments/assets/65f44b73-232f-4e6e-a510-91abeb902c52)
 
 
 このプロジェクトは、CSVファイルから読み込んだ東京都市大学横浜キャンパスの2号館の太陽光発電システムのデータに対してバッグエンドでK-meansクラスタリング(k=3)を実行し、その結果をJSON形式で返しクライアントで表示するNext.jsアプリケーションです。
