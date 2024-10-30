@@ -71,14 +71,14 @@ export default function HomePage() {
   return (
     <div className="container mx-auto p-4 min-h-screen flex flex-col">
       <main ref={containerRef} className="flex-grow m-auto mt-6">
-        <h1 className={`text-3xl font-bold mb-6 ${styles.fadeInSlideUp}`}>人工知能とデータマイニング 任意課題3</h1>
+        <h1 className="text-3xl font-bold mb-6">人工知能とデータマイニング 任意課題3</h1>
         <h2 className={`font-semibold mb-4 ${styles.fadeInSlideUp}`}><Link href="https://manapuraza.com">g2172117: 山下マナト</Link></h2>
 
-        <p className={`mb-4 ${styles.fadeInSlideUp}`}>K-means法でdata1.csvまたはdata2.csv、data3.csvをランダムでクラスタリングするプログラム。(k=3)クラスタリング結果は以下</p>
+        <p className={`mb-4 ${styles.fadeInSlideUp} ${styles.delay1}`}>K-means法でdata1.csvまたはdata2.csv、data3.csvをランダムでクラスタリングするプログラム。(k=3)クラスタリング結果は以下</p>
 
         <Button
           onClick={fetchClusters}
-          className={`mb-4 px-4 py-2 hover:bg-white hover:text-primary border border-primary ${styles.fadeInSlideUp}`}
+          className={`mb-4 px-4 py-2 hover:bg-white hover:text-primary border border-primary ${styles.fadeInSlideUp} ${styles.delay2}`}
         >
           クラスタリングを再実行
         </Button>
@@ -147,14 +147,14 @@ export default function HomePage() {
 
       <hr className="mb-4 mt-6" />
 
-      <ol className="fadeInSlideUp list-decimal list-inside mt-6 mb-6 ml-4">
+      <ol className={`list-decimal list-inside mt-6 mb-6 ml-4 ${styles.fadeInSlideUp}`}>
           <li><Link className="text-blue-600 hover:underline" href="https://nextjs.org">Next.js Approuter</Link> with <Link className="text-blue-600 hover:underline" href="https://www.typescriptlang.org/">Typescript</Link>: javascriptアプリケーション</li>
           <li><Link className="text-blue-600 hover:underline" href="https://ui.shadcn.com">shadcn-ui</Link>: UIコンポーネント</li>
           <li><Link className="text-blue-600 hover:underline" href="https://www.npmjs.com/package/kmeans-js">kmeans-jsライブラリ</Link>: kmeans法によるクラスタリング</li>
           <li><Link className="text-blue-600 hover:underline" href="https://www.papaparse.com/">papaparseライブラリ</Link>: CSVのパース</li>
       </ol>
 
-      <footer className="fadeInSlideUp mt-8 py-4 text-center text-sm text-gray-600">
+      <footer className={`mt-8 py-4 text-center text-sm text-gray-600 ${styles.fadeInSlideUp} ${styles.delay1} `}>
         <p>©︎2024 <Link href="https://manapuraza.com" className="text-blue-600 hover:underline">山下マナト</Link> / <Link href="https://github.com/ManatoYamashita/kmeans-clustering" className="text-blue-600 hover:underline">Githubリポジトリ</Link> / <Link href="/aiAndDataming_task3.pdf">レポート</Link></p>
       </footer>
     </div>
